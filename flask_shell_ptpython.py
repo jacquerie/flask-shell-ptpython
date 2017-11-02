@@ -1,3 +1,7 @@
+# -*- coding: utf-8 -*-
+
+from __future__ import absolute_import, division, print_function
+
 import os
 
 import click
@@ -13,7 +17,7 @@ def shell_command():
     namespace of this shell according to its configuration.
 
     This is useful for executing small snippets of management code
-    without having to manually configuring the application.
+    without having to manually configure the application.
     """
     from flask.globals import _app_ctx_stack
     from ptpython.repl import embed
