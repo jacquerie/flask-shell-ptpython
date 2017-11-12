@@ -12,7 +12,7 @@ URL = 'https://github.com/jacquerie/flask-shell-ptpython'
 readme = open('README.rst').read()
 
 setup_requires = [
-    'autosemver~=0.0,>=0.5.2',
+    'autosemver~=0.0,>=0.5.3',
 ]
 
 install_requires = [
@@ -71,6 +71,7 @@ setup(
         'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python',
