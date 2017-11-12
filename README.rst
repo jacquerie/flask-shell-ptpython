@@ -19,6 +19,8 @@ Inspired by `flask-shell-ipython`_ by `@ei-grad`_.
 Install
 =======
 
+``flask-shell-ptpython`` is on PyPI, so all you have to do is:
+
 .. code-block:: console
 
     $ pip install flask-shell-ptpython
@@ -27,10 +29,21 @@ Install
 Usage
 =====
 
+``flask-shell-ptpython`` hooks itself into Flask through an entry point, so all
+you have to do is:
+
 .. code-block:: console
 
   $ flask shell
-  >>>
+
+
+Alternatives
+============
+
+If you prefer BPython you can use `flask-shell-bpython`_, while if you prefer
+IPython you can use `flask-shell-ipython`_.
+
+.. _`flask-shell-bpython`: https://github.com/jacquerie/flask-shell-bpython
 
 
 Author
