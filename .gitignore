@@ -91,3 +91,6 @@ ENV/
 # Build artifacts
 AUTHORS
 CHANGELOG
+
+# Idea files
+.idea
