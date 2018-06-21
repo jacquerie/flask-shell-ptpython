@@ -34,4 +34,11 @@ def shell_command():
 
     ctx.update(app.make_shell_context())
 
-    embed(globals=ctx)
+    # Apply config file
+    def configure(repl):
+        path = os.path.join("~/.ptpython", 'config.py')
+        if os.path.exists(os.path.expanduser(path)):
+            from ptpython.repl import run_config
+            run_config(repl, path)
+
+    embed(globals=ctx, configure=configure)
