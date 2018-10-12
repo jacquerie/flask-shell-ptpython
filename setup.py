@@ -12,21 +12,20 @@ URL = 'https://github.com/jacquerie/flask-shell-ptpython'
 readme = open('README.rst').read()
 
 setup_requires = [
-    'autosemver~=0.0,>=0.5.3',
+    'autosemver>=0.5.3',
 ]
 
 install_requires = [
-    'Flask~=0.0,>=0.12.2',
-    'click~=6.0,>=6.7',
-    'ptpython~=0.0,>=0.41',
+    'Flask>=0.12.2',
+    'click>=6.7',
+    'ptpython>=0.41',
 ]
 
 docs_require = []
 
 tests_require = [
-    'flake8-future-import~=0.0,>=0.4.3',
-    'pytest-flake8~=0.0,>=.0.9.1',
-    'pytest~=3.0,>=3.2.3',
+    'flake8-future-import>=0.4.3',
+    'pytest-flake8>=.0.9.1',
 ]
 
 extras_require = {
