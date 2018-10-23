@@ -1,0 +1,16 @@
+[core]
+owner = jacquerie
+repo = flask-shell-ptpython
+description = Replace the default flask shell command
+    with a similar one running PTPython.
+topics = flask, ptpython, python
+
+[features]
+has_issues = true
+has_projects = false
+has_wiki = false
+
+[merges]
+allow_squash_merge = false
+allow_merge_commit = false
+allow_rebase_merge = true
