@@ -36,6 +36,9 @@ you have to do is:
 
   $ flask shell
 
+You may set ``FLASK_PTHISTORY`` environment variable to a path of a file to
+enable persistent history.
+
 
 Alternatives
 ============

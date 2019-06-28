@@ -34,4 +34,6 @@ def shell_command():
 
     ctx.update(app.make_shell_context())
 
-    embed(globals=ctx)
+    # Enable history with FLASK_PTHISTORY pointing to a file.
+    history = os.environ.get('FLASK_PTHISTORY')
+    embed(globals=ctx, history_filename=history)
