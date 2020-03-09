@@ -20,7 +20,8 @@ def shell_command():
     without having to manually configure the application.
     """
     from flask.globals import _app_ctx_stack
-    from ptpython.repl import embed
+    from ptpython.repl import embed, run_config
+    from ptpython.entry_points.run_ptpython import create_parser, get_config_and_history_file
 
     app = _app_ctx_stack.top.app
     ctx = {}
@@ -34,4 +35,15 @@ def shell_command():
 
     ctx.update(app.make_shell_context())
 
-    embed(globals=ctx)
+    config_file, history_filename = get_config_and_history_file(
+        create_parser().parse_args([])
+    )
+
+    def configure(repl):
+        run_config(repl, config_file=config_file)
+
+    embed(
+        globals=ctx,
+        history_filename=history_filename,
+        configure=configure
+    )
