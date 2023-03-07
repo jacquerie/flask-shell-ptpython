@@ -25,7 +25,7 @@ docs_require = []
 
 tests_require = [
     'flake8-future-import>=0.4.3',
-    'pytest-flake8>=.0.9.1',
+    'pytest-flake8>=0.9.1',
 ]
 
 extras_require = {
